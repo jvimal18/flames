@@ -1,0 +1,157 @@
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+    overflow-x: hidden;
+}
+
+.highlight {
+    color:tomato;
+}
+
+.container{
+    padding-left: 10%;
+    padding-right: 10%
+}
+
+.button{
+    margin:auto;
+    margin-top:20px;
+    text-align: center;
+    color: aliceblue;
+    border-style: solid;
+    border-color: tomato;
+    background-color: tomato;
+    width: 33%;
+    border-radius:15px;
+}
+
+/* header */
+
+header {
+    background-color: rgb(12, 33, 51);
+    min-height: 70px;
+    text-transform: uppercase;
+}
+
+header img{
+    float:left;
+    width:50px;
+    margin-top:10px;
+}
+
+header div.title {
+    color: white;
+    padding-top: 10px;
+    padding-left: 60px;
+}
+
+header div.title:hover {
+    color: tomato;
+}
+
+/* sections */
+
+section#app {   
+    display:flex;
+    padding-top: 10%;
+    background-image: url(imgs/yoann-boyer-bHjESj14fqY-unsplash-reduced.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover; 
+    opacity: 0.75;
+    height: 85%;
+    overflow-y: auto; 
+}
+
+section#quotes {
+    font-size: 20px;
+    max-width: 50%;
+}
+
+section div#quotes h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+section div#quotes p {
+    color: white;
+    font-size: 20px;
+}
+
+section div#quotes .author {
+    float: right;
+}
+
+aside.form {
+    float:right;
+    width: 25%
+
+}
+
+aside h1{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+aside input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid tomato;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color:transparent;
+}
+
+aside div#result h1{
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px
+}
+
+.button:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+
+.zoom:hover {
+  transform: scale(1.1); 
+}
+
+footer{
+    min-height: 70px;
+    max-height: 70px;
+    background-color: rgb(12, 33, 51);
+    padding-top:25px;
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 786px) {
+    section#app
+    {
+        display: block;
+        /* overflow: auto; */
+        float: None;
+        width: 100%;
+        height: -webkit-fill-available;
+    }
+    aside.form {
+        float: None;
+        margin-top:60px;
+        width: 80%;
+    }
+}
